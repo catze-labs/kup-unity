@@ -271,6 +271,18 @@ MonoBehaviour:
     m_Key: Error_Pot
     m_Metadata:
       m_Items: []
+  - m_Id: 178162521417895936
+    m_Key: 'LoginFail_Popup_Description '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178168139092512768
+    m_Key: Login_Panel_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178168237612519424
+    m_Key: Login_Panel_LoginButton
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -277,5 +277,17 @@ MonoBehaviour:
     m_Localized: '*You need to be near a pot to cook'
     m_Metadata:
       m_Items: []
+  - m_Id: 178162521417895936
+    m_Localized: Invaild Email or password.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178168139092512768
+    m_Localized: Login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178168237612519424
+    m_Localized: Sign In
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

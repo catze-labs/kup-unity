@@ -9,6 +9,7 @@ public class UIMenuManager : MonoBehaviour
 	[SerializeField] private UISettingsController _settingsPanel = default;
 	[SerializeField] private UICredits _creditsPanel = default;
 	[SerializeField] private UIMainMenu _mainMenuPanel = default;
+	[SerializeField] private UILogin _loginPanel = default;
 
 	[SerializeField] private SaveSystem _saveSystem = default;
 
@@ -21,7 +22,7 @@ public class UIMenuManager : MonoBehaviour
 	[SerializeField]
 	private VoidEventChannelSO _continueGameEvent = default;
 
-
+	public static bool _onLogin = false;
 
 	private bool _hasSaveData;
 
@@ -31,16 +32,54 @@ public class UIMenuManager : MonoBehaviour
 		yield return new WaitForSeconds(0.4f); //waiting time for all scenes to be loaded 
 		SetMenuScreen();
 	}
+
 	void SetMenuScreen()
 	{
+		if (_onLogin)
+		{
+			LoginSuccesss();
+			return;
+		}
+
+		_loginPanel.LoginButtonAction += () =>
+		{
+			AuthBackend.OnLogin(new LoginInfo
+			{
+				email = _loginPanel.EmailField.text,
+				password = _loginPanel.PasswordField.text
+			},
+			result =>
+			{
+				if (result.callbackType == CallbackType.Success)
+				{
+					_onLogin = true;
+					LoginSuccesss();
+				}
+				else
+				{
+					if (_loginPanel.loginFailText.activeSelf == false)
+					{
+						_loginPanel.loginFailText.SetActive(true);
+					}
+				}
+			});
+		};
+
+		_loginPanel.ExitButtonAction += ShowExitConfirmationPopup;
+	}
+
+	void LoginSuccesss()
+	{
+		_loginPanel.gameObject.SetActive(false);
+
 		_hasSaveData = _saveSystem.LoadSaveDataFromDisk();
+		_mainMenuPanel.gameObject.SetActive(true);
 		_mainMenuPanel.SetMenuScreen(_hasSaveData);
 		_mainMenuPanel.ContinueButtonAction += _continueGameEvent.RaiseEvent;
 		_mainMenuPanel.NewGameButtonAction += ButtonStartNewGameClicked;
 		_mainMenuPanel.SettingsButtonAction += OpenSettingsScreen;
 		_mainMenuPanel.CreditsButtonAction += OpenCreditsScreen;
 		_mainMenuPanel.ExitButtonAction += ShowExitConfirmationPopup;
-
 	}
 
 	void ButtonStartNewGameClicked()
@@ -149,7 +188,10 @@ public class UIMenuManager : MonoBehaviour
 		_popupPanel.gameObject.SetActive(false);
 		if (quitConfirmed)
 		{
-			Application.Quit();
+			DataBackend.UpdateLeaderboard(() =>
+			{
+				Application.Quit();
+			});
 		}
 		_mainMenuPanel.SetMenuScreen(_hasSaveData);
 
