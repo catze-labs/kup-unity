@@ -1,0 +1,7 @@
+<linker>
+    <assembly fullname="System">
+        <type fullname="System.ComponentModel.ByteConverter" preserve="all"/>
+        <type fullname="System.ComponentModel.CharConverter" preserve="all"/>
+        <type fullname="System.ComponentModel.UInt32Converter" preserve="all"/>
+    </assembly>
+</linker>
