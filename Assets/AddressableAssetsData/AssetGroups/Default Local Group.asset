@@ -16,7 +16,47 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: a7bae5f88e2e24365bdf768f42df85c5
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 969b7f174e8c76843aa3fcdbade0487b
+    m_Address: Assets/Scenes/Managers/PersistentManagers.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9a863f9bc60514821bc17f41d9f0162c
+    m_Address: Assets/Scenes/Managers/Gameplay.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 431ff81b74b48fb4d9301fb76ca633dd
+    m_Address: Assets/ScriptableObjects/SceneData/Menus/MainMenu.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0d5ad1a75d5793e4cbb19114682b3fb5
+    m_Address: Assets/Scenes/Whiteboxing/Community/GeneralMapMediumMultipleScenes/Beach.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: df490f8a21305b549b67b8301af79724
+    m_Address: Assets/Scenes/Menus/MainMenu.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dfaf60263d5c5dc4e80e2793f4328b32
+    m_Address: Assets/Scenes/Locations/Beach.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 502ef1f9e1ba4cd43a1353e48729da72
+    m_Address: Assets/Scenes/Whiteboxing/Community/Beach/Proposal_2/Beach.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cb3b2009df213f14bba9e8aeda88a5a9
+    m_Address: Assets/Scenes/Whiteboxing/Community/GeneralMapMediumMultipleScenes/Farms.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c73157bd4ddf4443d97c753bdf357fc1
+    m_Address: Assets/Scenes/WIP/Settings System.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 64b8cea9ceb44e740abf128106f0eb1e
+    m_Address: Assets/Scenes/Whiteboxing/Community/GeneralMapMediumMultipleScenes/Town.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: bffab80dc16c4464b92b2e97b6a1964c, type: 2}
   m_SchemaSet:

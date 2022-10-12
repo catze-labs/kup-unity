@@ -17,10 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 3e3a1c93f500e3d45adb64bf8e9a3865
   m_SerializeEntries:
-  - m_GUID: dfaf60263d5c5dc4e80e2793f4328b32
-    m_Address: Assets/Scenes/Locations/Beach.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: b364a71d126b2bf44a2f4b006b35d4b7
     m_Address: Assets/Scenes/Locations/Field_Farms.unity
     m_ReadOnly: 0
