@@ -75,6 +75,7 @@ public class InputReader : DescriptionBaseSO, GameInput.IGameplayActions, GameIn
 		switch (context.phase)
 		{
 			case InputActionPhase.Performed:
+				DataBackend.PlusAttackCount();
 				AttackEvent.Invoke();
 				break;
 			case InputActionPhase.Canceled:

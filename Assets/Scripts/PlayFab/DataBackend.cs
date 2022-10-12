@@ -15,6 +15,7 @@ public static class DataBackend
 
 	public static void UpdateLeaderboard(Action callback = null)
 	{
+		Debug.Log(_attackCount);
 		PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest
 		{
 			FunctionName = "updatePlayerLeaderboard",
