@@ -5,12 +5,12 @@ using UnityEngine;
 
 public static class DataBackend
 {
-	// 임시 코드
 	private static int _attackCount = 0;
 
 	public static void PlusAttackCount()
 	{
 		_attackCount++;
+		Debug.Log($"Attack: {_attackCount}");
 	}
 
 	public static void UpdateLeaderboard(Action callback = null)
