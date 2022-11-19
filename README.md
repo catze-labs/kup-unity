@@ -1,3 +1,8 @@
+![image](https://user-images.githubusercontent.com/65929678/202863644-a3d8c0fb-a2d9-400c-8928-2ad47cb6871a.png)
+
+> 🎉 KUP won 1st place in The Metaverse+ NFTs Track at KlayMakers2022. 🎉  
+> https://dorahacks.io/hackathon/klaymakers22/results
+
 # kup-unity
 
 # Klaymakers2022 KUP information <br/>
