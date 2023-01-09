@@ -5,7 +5,6 @@
 
 # kup-unity
 
-# Klaymakers2022 KUP information <br/>
 Gitbook: https://kup.gitbook.io <br/>
 Website: https://kup.vercel.app/ <br/>
 
